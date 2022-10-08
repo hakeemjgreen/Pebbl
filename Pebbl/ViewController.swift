@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var pages = [UIViewController]()
     let label = UILabel()
     var currentVC = UIViewController()
+    let pageControl = UIPageControl()
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         self.pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
@@ -32,6 +33,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
 //        view.backgroundColor = .red
         
@@ -39,24 +41,34 @@ class ViewController: UIViewController {
     }
     
     private func setup(){
-        view.backgroundColor = .white
+//        view.backgroundColor = UIColor(hex: "#f6f6f6")
+//        pageViewController.view.translatesAutoresizingMaskIntoConstraints = true //Setup for autolayout
+        
         
         //Add child view controller to parent view controller
         addChild(pageViewController)
         view.addSubview(pageViewController.view) //Add child view to subview
         pageViewController.didMove(toParent: self) //
         
+        let proxy = UIPageControl.appearance()
+        proxy.pageIndicatorTintColor = .gray
+        proxy.currentPageIndicatorTintColor = .black
+        proxy.contentMode = .left
+
         pageViewController.dataSource = self
-        pageViewController.view.translatesAutoresizingMaskIntoConstraints = false //Setup for autolayout
         
+        pageViewController.view.translatesAutoresizingMaskIntoConstraints = false
         
-        //Layout parent view controller
         NSLayoutConstraint.activate([
-            view.topAnchor.constraint(equalTo: pageViewController.view.topAnchor),
-            view.leadingAnchor.constraint(equalTo: pageViewController.view.leadingAnchor),
-            view.trailingAnchor.constraint(equalTo: pageViewController.view.trailingAnchor),
-            view.bottomAnchor.constraint(equalTo: pageViewController.view.bottomAnchor),
+            
+//            description.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            pageViewController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            pageViewController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 20),
+            pageViewController.view.topAnchor.constraint(equalTo: view.topAnchor),
+            pageViewController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            
         ])
+        
         
         pageViewController.setViewControllers([pages.first!], direction: .forward, animated: false, completion: nil)
         currentVC = pages.first!
@@ -101,30 +113,54 @@ extension ViewController: UIPageViewControllerDataSource{
 class ViewController1: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemRed
+        //        view.backgroundColor = .systemRed
         
         let title = UILabel()
         title.text = "PAGE 1"
         view.addSubview(title)
+        let description = UILabel()
         
-        NSLayoutConstraint.activate(
-        [
-        title.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        ]
-        )
+        view.addSubview(description)
+        title.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+        description.text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        description.translatesAutoresizingMaskIntoConstraints = false
+        description.numberOfLines = 0
+        description.textColor = UIColor(hex: "#ffffff")
+        description.setLineHeight(lineHeight: 10)
+        
+        
+        NSLayoutConstraint.activate([
+            
+//            title.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+//            title.topAnchor.constraint(equalToSystemSpacingBelow: view.safeAreaLayoutGuide.topAnchor, multiplier: 2)
+            title.bottomAnchor.constraint(equalTo: description.topAnchor)
+            
+        ])
+        
+        NSLayoutConstraint.activate([
+            
+//            description.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            description.bottomAnchor.constraint(equalToSystemSpacingBelow: view.safeAreaLayoutGuide.bottomAnchor, multiplier: -400),
+            description.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            description.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            
+            
+        ])
     }
 }
 
 class ViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemGreen
+//        view.backgroundColor = .systemGreen
     }
 }
 
 class ViewController3: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBlue
+//        view.backgroundColor = .systemBlue
     }
 }

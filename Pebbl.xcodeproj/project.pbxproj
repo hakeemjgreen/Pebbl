@@ -11,6 +11,7 @@
 		75B83B3C28EF3C1800F21F28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B83B3B28EF3C1800F21F28 /* ViewController.swift */; };
 		75B83B4228EF3C1800F21F28 /* Pebbl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75B83B4028EF3C1800F21F28 /* Pebbl.xcdatamodeld */; };
 		75B83B4428EF3C1A00F21F28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75B83B4328EF3C1A00F21F28 /* Assets.xcassets */; };
+		75B83B4F28F1317B00F21F28 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B83B4E28F1317B00F21F28 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		75B83B4128EF3C1800F21F28 /* Pebbl.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pebbl.xcdatamodel; sourceTree = "<group>"; };
 		75B83B4328EF3C1A00F21F28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75B83B4828EF3C1A00F21F28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75B83B4E28F1317B00F21F28 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 		75B83B2B28EF3C1800F21F28 = {
 			isa = PBXGroup;
 			children = (
+				75B83B4E28F1317B00F21F28 /* Helpers.swift */,
 				75B83B3628EF3C1800F21F28 /* Pebbl */,
 				75B83B3528EF3C1800F21F28 /* Products */,
 			);
@@ -133,6 +136,7 @@
 				75B83B3C28EF3C1800F21F28 /* ViewController.swift in Sources */,
 				75B83B3828EF3C1800F21F28 /* AppDelegate.swift in Sources */,
 				75B83B4228EF3C1800F21F28 /* Pebbl.xcdatamodeld in Sources */,
+				75B83B4F28F1317B00F21F28 /* Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
