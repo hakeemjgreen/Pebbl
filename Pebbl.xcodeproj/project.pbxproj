@@ -12,6 +12,7 @@
 		75B83B4228EF3C1800F21F28 /* Pebbl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75B83B4028EF3C1800F21F28 /* Pebbl.xcdatamodeld */; };
 		75B83B4428EF3C1A00F21F28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75B83B4328EF3C1A00F21F28 /* Assets.xcassets */; };
 		75B83B4F28F1317B00F21F28 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B83B4E28F1317B00F21F28 /* Helpers.swift */; };
+		75B83B5128F1F2E800F21F28 /* onboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B83B5028F1F2E800F21F28 /* onboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		75B83B4328EF3C1A00F21F28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75B83B4828EF3C1A00F21F28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75B83B4E28F1317B00F21F28 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		75B83B5028F1F2E800F21F28 /* onboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +40,6 @@
 		75B83B2B28EF3C1800F21F28 = {
 			isa = PBXGroup;
 			children = (
-				75B83B4E28F1317B00F21F28 /* Helpers.swift */,
 				75B83B3628EF3C1800F21F28 /* Pebbl */,
 				75B83B3528EF3C1800F21F28 /* Products */,
 			);
@@ -55,13 +56,23 @@
 		75B83B3628EF3C1800F21F28 /* Pebbl */ = {
 			isa = PBXGroup;
 			children = (
+				75B83B4E28F1317B00F21F28 /* Helpers.swift */,
 				75B83B3728EF3C1800F21F28 /* AppDelegate.swift */,
 				75B83B3B28EF3C1800F21F28 /* ViewController.swift */,
+				75B83B5228F22C7E00F21F28 /* Onboarding */,
 				75B83B4328EF3C1A00F21F28 /* Assets.xcassets */,
 				75B83B4828EF3C1A00F21F28 /* Info.plist */,
 				75B83B4028EF3C1800F21F28 /* Pebbl.xcdatamodeld */,
 			);
 			path = Pebbl;
+			sourceTree = "<group>";
+		};
+		75B83B5228F22C7E00F21F28 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				75B83B5028F1F2E800F21F28 /* onboardingViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 				75B83B3828EF3C1800F21F28 /* AppDelegate.swift in Sources */,
 				75B83B4228EF3C1800F21F28 /* Pebbl.xcdatamodeld in Sources */,
 				75B83B4F28F1317B00F21F28 /* Helpers.swift in Sources */,
+				75B83B5128F1F2E800F21F28 /* onboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +276,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QWJGNJSPJ4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Pebbl/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -289,6 +302,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QWJGNJSPJ4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Pebbl/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
