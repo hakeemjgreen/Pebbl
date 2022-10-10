@@ -56,5 +56,22 @@ extension UILabel {
         
         self.attributedText = attributeString
     }
+    override open func willMove(toSuperview newSuperview: UIView?) {
+        super.willMove(toSuperview: newSuperview)
+
+        guard newSuperview != nil else {
+            return
+        }
+
+        //Change all text color to black
+        if #available(iOS 13.0, *) {
+            if textColor == UIColor.label {
+                textColor = .black
+            }
+        } else if textColor == UIColor.darkText {
+            textColor = .black
+        }
+    }
 
 }
+

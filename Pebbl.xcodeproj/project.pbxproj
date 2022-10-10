@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		75B83B3828EF3C1800F21F28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B83B3728EF3C1800F21F28 /* AppDelegate.swift */; };
-		75B83B3C28EF3C1800F21F28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B83B3B28EF3C1800F21F28 /* ViewController.swift */; };
+		75B83B3C28EF3C1800F21F28 /* OnBoardingHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B83B3B28EF3C1800F21F28 /* OnBoardingHomeController.swift */; };
 		75B83B4228EF3C1800F21F28 /* Pebbl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75B83B4028EF3C1800F21F28 /* Pebbl.xcdatamodeld */; };
 		75B83B4428EF3C1A00F21F28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75B83B4328EF3C1A00F21F28 /* Assets.xcassets */; };
 		75B83B4F28F1317B00F21F28 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B83B4E28F1317B00F21F28 /* Helpers.swift */; };
 		75B83B5128F1F2E800F21F28 /* onboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B83B5028F1F2E800F21F28 /* onboardingViewController.swift */; };
+		75B83B5428F35FB000F21F28 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B83B5328F35FB000F21F28 /* LoginViewController.swift */; };
+		75B83B5628F3C5C200F21F28 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B83B5528F3C5C200F21F28 /* LoginView.swift */; };
+		75B83B5828F3DA4C00F21F28 /* PhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B83B5728F3DA4C00F21F28 /* PhoneNumberView.swift */; };
+		75B83B5A28F49A0000F21F28 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B83B5928F49A0000F21F28 /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		75B83B3428EF3C1800F21F28 /* Pebbl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pebbl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B83B3728EF3C1800F21F28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		75B83B3B28EF3C1800F21F28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75B83B3B28EF3C1800F21F28 /* OnBoardingHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingHomeController.swift; sourceTree = "<group>"; };
 		75B83B4128EF3C1800F21F28 /* Pebbl.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pebbl.xcdatamodel; sourceTree = "<group>"; };
 		75B83B4328EF3C1A00F21F28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75B83B4828EF3C1A00F21F28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75B83B4E28F1317B00F21F28 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		75B83B5028F1F2E800F21F28 /* onboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboardingViewController.swift; sourceTree = "<group>"; };
+		75B83B5328F35FB000F21F28 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		75B83B5528F3C5C200F21F28 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		75B83B5728F3DA4C00F21F28 /* PhoneNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberView.swift; sourceTree = "<group>"; };
+		75B83B5928F49A0000F21F28 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = Pebbl/FeedViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +66,8 @@
 			children = (
 				75B83B4E28F1317B00F21F28 /* Helpers.swift */,
 				75B83B3728EF3C1800F21F28 /* AppDelegate.swift */,
-				75B83B3B28EF3C1800F21F28 /* ViewController.swift */,
+				75B83B3B28EF3C1800F21F28 /* OnBoardingHomeController.swift */,
+				75B83B5928F49A0000F21F28 /* FeedViewController.swift */,
 				75B83B5228F22C7E00F21F28 /* Onboarding */,
 				75B83B4328EF3C1A00F21F28 /* Assets.xcassets */,
 				75B83B4828EF3C1A00F21F28 /* Info.plist */,
@@ -71,6 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				75B83B5028F1F2E800F21F28 /* onboardingViewController.swift */,
+				75B83B5328F35FB000F21F28 /* LoginViewController.swift */,
+				75B83B5528F3C5C200F21F28 /* LoginView.swift */,
+				75B83B5728F3DA4C00F21F28 /* PhoneNumberView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -144,10 +156,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75B83B3C28EF3C1800F21F28 /* ViewController.swift in Sources */,
+				75B83B5428F35FB000F21F28 /* LoginViewController.swift in Sources */,
+				75B83B5A28F49A0000F21F28 /* FeedViewController.swift in Sources */,
+				75B83B5628F3C5C200F21F28 /* LoginView.swift in Sources */,
+				75B83B3C28EF3C1800F21F28 /* OnBoardingHomeController.swift in Sources */,
 				75B83B3828EF3C1800F21F28 /* AppDelegate.swift in Sources */,
 				75B83B4228EF3C1800F21F28 /* Pebbl.xcdatamodeld in Sources */,
 				75B83B4F28F1317B00F21F28 /* Helpers.swift in Sources */,
+				75B83B5828F3DA4C00F21F28 /* PhoneNumberView.swift in Sources */,
 				75B83B5128F1F2E800F21F28 /* onboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

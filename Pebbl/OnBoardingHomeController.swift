@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class OnBoardingHomeController: UIViewController {
 
     var pageViewController = UIPageViewController()
     var pages = [UIViewController]()
@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     var pageControl = UIPageControl()
     var currIndex = 0
     let loginButton = UIButton()
+    let loginViewController = LoginViewController()
     let signupButton = UIButton()
         
     
@@ -87,10 +88,16 @@ class ViewController: UIViewController {
         view.addSubview(signupButton)
         view.addSubview(loginButton)
         view.addSubview(pageControl)
+        
+        view.backgroundColor = .white
     }
     
     @objc func loginClick(_ sender: UIButton){
         print("Login")
+        self.navigationController?.popViewController(animated: false)
+//        self.present(loginViewController, animated:true, completion:nil)
+        self.navigationController?.pushViewController(loginViewController,animated: true)
+
     }
     
     @objc func signupClick(){
@@ -120,7 +127,7 @@ class ViewController: UIViewController {
 
 
 }
-extension ViewController: UIPageViewControllerDelegate{
+extension OnBoardingHomeController: UIPageViewControllerDelegate{
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool){
         
         if (!completed)
@@ -135,7 +142,7 @@ extension ViewController: UIPageViewControllerDelegate{
         pageControl.currentPage = currIndex
     }
 }
-extension ViewController: UIPageViewControllerDataSource{
+extension OnBoardingHomeController: UIPageViewControllerDataSource{
     //View controller before swipe
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
