@@ -17,6 +17,7 @@
 		75B83B5628F3C5C200F21F28 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B83B5528F3C5C200F21F28 /* LoginView.swift */; };
 		75B83B5828F3DA4C00F21F28 /* PhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B83B5728F3DA4C00F21F28 /* PhoneNumberView.swift */; };
 		75B83B5A28F49A0000F21F28 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B83B5928F49A0000F21F28 /* FeedViewController.swift */; };
+		75CC428D28F54407001A3C0C /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CC428C28F54407001A3C0C /* Page.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		75B83B5528F3C5C200F21F28 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		75B83B5728F3DA4C00F21F28 /* PhoneNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberView.swift; sourceTree = "<group>"; };
 		75B83B5928F49A0000F21F28 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = Pebbl/FeedViewController.swift; sourceTree = SOURCE_ROOT; };
+		75CC428C28F54407001A3C0C /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				75B83B5028F1F2E800F21F28 /* onboardingViewController.swift */,
+				75CC428C28F54407001A3C0C /* Page.swift */,
 				75B83B5328F35FB000F21F28 /* LoginViewController.swift */,
 				75B83B5528F3C5C200F21F28 /* LoginView.swift */,
 				75B83B5728F3DA4C00F21F28 /* PhoneNumberView.swift */,
@@ -160,6 +163,7 @@
 				75B83B5A28F49A0000F21F28 /* FeedViewController.swift in Sources */,
 				75B83B5628F3C5C200F21F28 /* LoginView.swift in Sources */,
 				75B83B3C28EF3C1800F21F28 /* OnBoardingHomeController.swift in Sources */,
+				75CC428D28F54407001A3C0C /* Page.swift in Sources */,
 				75B83B3828EF3C1800F21F28 /* AppDelegate.swift in Sources */,
 				75B83B4228EF3C1800F21F28 /* Pebbl.xcdatamodeld in Sources */,
 				75B83B4F28F1317B00F21F28 /* Helpers.swift in Sources */,
